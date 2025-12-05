@@ -1,0 +1,22 @@
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-label {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.price-text {
+  padding: 20px;
+  border: 1px solid #8f5e4b;
+  border-radius: 32px;
+  background-color: #ffefc1;
+  width: 200px;
+  margin: 20px auto;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}

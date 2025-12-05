@@ -1,11 +1,12 @@
-import "./App.css";
+import './App.css';
+import BurgerConstructorPage from './containers/BurgerConstructorPage/BurgerConstructorPage';
 
-function App() {
+const App = () => {
   return (
     <>
-      
+      <BurgerConstructorPage />
     </>
   );
-}
+};
 
 export default App;

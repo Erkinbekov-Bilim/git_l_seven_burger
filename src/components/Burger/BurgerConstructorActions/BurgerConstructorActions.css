@@ -1,0 +1,121 @@
+.burger-constructor-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid #8f5e4b;
+  border-radius: 32px;
+  padding: 30px;
+}
+
+.ingredient-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.action {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.burger-constructor-action {
+  width: 80px;
+  height: 80px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  border-radius: 22px;
+  position: relative;
+}
+
+.burger-constructor-action::before {
+  display: block;
+  content: '';
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.burger-constructor-action:hover {
+  transform: scale(1.1);
+}
+
+.burger-constructor-action:active {
+  transform: scale(0.95);
+}
+
+.meat-button {
+  background: #ffb1b1;
+  border-color: #754b4b;
+}
+
+.meat-button::before {
+  background-image: url('../../../assets/icons/ic-cutlet.png');
+}
+
+.meat-button:hover {
+  background: #df7979;
+}
+
+.cheese-button {
+  background: #ffef91;
+  border-color: #a68f4b;
+}
+
+.cheese-button::before {
+  background-image: url('../../../assets/icons/ic-cheese.svg');
+}
+
+.cheese-button:hover {
+  background: #f5c280;
+}
+
+.bacon-button {
+  background: #ffc6b8;
+  border-color: #8f5e4b;
+}
+
+.bacon-button::before {
+  background-image: url('../../../assets/icons/ic-bacon.svg');
+}
+
+.bacon-button:hover {
+  background: #f5a280;
+}
+
+.salad-button {
+  background: #baffb3;
+  border-color: #4b8f4b;
+}
+
+.salad-button::before {
+  background-image: url('../../../assets/icons/ic-salad.svg');
+}
+
+.salad-button:hover {
+  background: #a8e6a1;
+}
+
+.ingredient-name {
+  display: block;
+  width: 64px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.burger-constructor-action-delete {
+  width: 20px;
+  height: 20px;
+  background: red;
+  transition: all 0.2s ease-in-out;
+}
+
+.burger-constructor-action-delete:hover {
+  background: darkred;
+}
