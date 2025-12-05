@@ -109,13 +109,38 @@
   font-weight: 700;
 }
 
+.ingredient-count {
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.ingredient-count::before {
+  content: 'x';
+}
+
 .burger-constructor-action-delete {
-  width: 20px;
-  height: 20px;
-  background: red;
+  width: 70px;
+  height: 60px;
+  background: rgb(255, 255, 255);
   transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.burger-constructor-action-delete::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url('../../../assets/icons/ic-delete.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
 }
 
 .burger-constructor-action-delete:hover {
-  background: darkred;
+  background: rgb(255, 163, 163);
+}
+.burger-constructor-action-delete:active {
+  background: rgb(255, 120, 120);
 }

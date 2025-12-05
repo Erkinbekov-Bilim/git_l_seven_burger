@@ -25,9 +25,7 @@ const BurgerConstructorActions: React.FC<IBurgerConstructorActions> = ({
             onClick={() => getIngredient(ingredient.name)}
           />
           <span className="ingredient-name">{ingredient.name}</span>
-          <span className="ingredient-count">
-            x {ingredientCount(ingredient.name)}
-          </span>
+          <p className="ingredient-count">{ingredientCount(ingredient.name)}</p>
           <Button
             type="button"
             className="burger-constructor-action burger-constructor-action-delete"
